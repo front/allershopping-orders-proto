@@ -25,32 +25,107 @@ title: Allershopping Orders
       <thead>
         <tr>
           <th>Id</th>
-          <th>Date</th>
+          <th>Dato</th>
+          <th>Kundenavn</th>
+          <th>Kundeid</th>
+          <th>Email Kunde</th>
+          <th>Ordresum Totalt</th>
+          <th>Status</th>
+          <th>Status</th>
+          <th>Status</th>
+          <th>Shop</th>
+          <th>Betalingsmåte</th>
           <th>&nbsp;</th>
         </tr>
       </thead>
       <tbody>
       {% for order in site.data.orders %}
         <tr>
-          <td>{{ order.id }}</td>
-          <td>{{ order.date | date_to_string }}</td>
+          <td><a href="order/{{ order.id }}">{{ order.id }}</a></td>
+          <td>{{ order.date | date: "%d/%m/%Y %H:%M" }}</td>
+          <td>{{ order.username }}</td>
+          <td>{{ order.userid }}</td>
+          <td>{{ order.useremail }}</td>
+          <td>{{ order.total | money }}</td>
+          <td>
+            {% if order.status == "completed" %}
+            <span class="label label-success">OK</span>
+            {% else order.status == "manual" %}
+            <span class="label label-danger">IKKE FERDIG</span>
+            {% endif %}
+          </td>
+          <td>
+            {% if order.paymentmethod == 'Invoice' and order.status == "manual" %}
+            <button class="btn btn-sm btn-default">Lag invoice</button>
+            {% elsif order.paymentmethod == 'DIBS' and order.status == "manual" and order.ide == 0 %}
+            <span class="label label-warning">Avventer <span class="glyphicon glyphicon-arrow-right"></span></span>
+            {% elsif order.paymentmethod == 'DIBS' and order.status == "manual" and order.ide == 1 %}
+            <span class="label label-warning">Avventer <span class="glyphicon glyphicon-arrow-left"></span></span>
+            {% elsif order.paymentmethod == 'DIBS' and order.status == "manual" and order.ide == 2 %}
+            <span class="label label-success">Ekspedert</span>
+            {% elsif order.paymentmethod == 'DIBS' and order.status == "manual" %}
+            <button class="btn btn-sm btn-default">Bekreft</button>
+            {% elsif order.status == "completed" %}
+            <span class="label label-success">OK</span>
+            {% endif %}            
+          </td>
+          <td>
+            
+          </td>
+          <td>{{ order.shop }}</td>
+          <td>{{ order.paymentmethod }}</td>
           <td>
             <div class="btn-group">
               <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                 Rediger <span class="caret"></span>
               </button>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li><a onclick="$(this).openEditForm();">Hurtigredigering</a></li>
                 <li class="divider"></li>
-                <li><a href="#">Separated link</a></li>
+                <li><a href="#">Se</a></li>
+                <li><a href="#">Rediger</a></li>
+                {% if order.status == 'completed' %}
+                <li class="divider"></li>
+                <li><a style="color:#ff0000;" href="#">Kreditere</a></li>
+                {% endif %}
               </ul>
+            </div>
+          </td>
+        </tr>
+        <tr class="edit-form hide">
+          <td colspan="12">
+            <div class="well">
+              <button type="button" class="close" onclick="$(this).closeEditForm();" aria-hidden="true">&times;</button>
+
+                <form class="form-inline" role="form">
+                  <div class="form-group">
+                    <label for="exampleInputEmail2">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword2">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+                  </div>
+                  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-save"></span> Save</button>
+                </form>
+            
             </div>
           </td>
         </tr>
       {% endfor %}
       </tbody>
-    </table>    
+    </table>
+
+    <div class="center-block">
+      <ul class="pagination">
+        <li><a href="#">&laquo;</a></li>
+        <li><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+      </ul>      
+    </div>
   </div>
 </div>
