@@ -1,0 +1,56 @@
+---
+layout: default
+title: Allershopping Orders
+---
+<div class="page-header">
+  <h1>Orders <small>overview</small></h1>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <form class="form-inline" role="form">
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputEmail2">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
+      </div>
+      <div class="form-group">
+        <label class="sr-only" for="exampleInputPassword2">Password</label>
+        <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
+      </div>
+      <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span>Search</button>
+    </form>
+  </div>
+  <div class="col-md-12">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Date</th>
+          <th>&nbsp;</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% for order in site.data.orders %}
+        <tr>
+          <td>{{ order.id }}</td>
+          <td>{{ order.date | date_to_string }}</td>
+          <td>
+            <div class="btn-group">
+              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                Rediger <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </div>
+          </td>
+        </tr>
+      {% endfor %}
+      </tbody>
+    </table>    
+  </div>
+</div>
