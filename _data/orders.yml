@@ -117,7 +117,7 @@
   username:       Marco Fernandes
   userid:         1
   useremail:      marco@front.no
-  total:          "349.00"
+  total:          "1708.00"
   status:         manual
   shop:           AllersShop
   ide:            0
@@ -125,34 +125,60 @@
   paymentmethod:  DIBS
   items:
     - id: 1
-      sku: 1001
+      sku:      1016a-716
+      title:    Pava lyslykt grå
+      price:    "100.00 kr"
+      quantity: 1
+      total:    "100.00 kr"
+      shop:     AllersShop
+      status:   manual
+      ide:      0
     - id: 2
-      sku: 1002-202
+      sku:      2043-6008
+      title:    Moisturizing Color Mask 250ml
+      price:    "205.00 kr"
+      quantity: 2
+      total:    "410.00 kr"
+      shop:     AllersShop
+      status:   manual
+      ide:      0
 
 - id:             567003
   date:           2013-12-12 11:31:07
   username:       Marco Fernandes
   userid:         1
   useremail:      marco@front.no
-  total:          "349.00"
+  total:          "1708.00"
   status:         manual
   shop:           Mineblader
   combined:       1
   paymentmethod:  DIBS
   items:
-    - id: 1
-      sku: kk
+    - id: 3
+      sku:      kk
+      title:    11 utgaver + Nora Norway skinnarmbånd (Blå)
+      price:    "298.00 kr"
+      quantity: 1
+      total:    "298.00 kr"
+      shop:     Mineblader
+      status:   manual
 
 - id:             567003
   date:           2013-12-12 11:31:07
   username:       Marco Fernandes
   userid:         1
   useremail:      marco@front.no
-  total:          "349.00"
+  total:          "1708.00"
   status:         manual
   shop:           KK
   combined:       1
   paymentmethod:  DIBS
   items:
-    - id: 1
-      sku: 1002-204
+    - id: 4
+      sku:      102-2100-0033
+      title:    "Myk og deilig Poncho - Motestrikk by KK & Dale Garn"
+      price:    "900.00 kr"
+      quantity: 1
+      total:    "900.00 kr"
+      shop:     KKShop
+      status:   manual
