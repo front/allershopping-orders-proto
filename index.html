@@ -55,11 +55,11 @@ title: Allershopping Orders
 
       <div class="form-group">
         <label class="sr-only" for="searchStartDate">Startdato</label>
-        <input type="email" class="form-control" id="searchStartDate" placeholder="Startdato">
+        <input class="form-control" id="searchStartDate" placeholder="Startdato">
       </div>
       <div class="form-group">
         <label class="sr-only" for="searchEndDate">Sluttdato</label>
-        <input type="email" class="form-control" id="searchEndDate" placeholder="Sluttdato">
+        <input class="form-control" id="searchEndDate" placeholder="Sluttdato">
       </div>
 
       <div class="form-group">
@@ -74,12 +74,16 @@ title: Allershopping Orders
       <thead>
         <tr>
           <th>Id</th>
-          <th>Dato</th>
+          <th>
+            Dato
+          </th>
           <th>Kundenavn</th>
           <th>Kundeid</th>
           <th>Email Kunde</th>
           <th>Ordresum Totalt</th>
-          <th>Status</th>
+          <th>
+            Status
+          </th>
           <th>Handlinger</th>
           <th>Shop</th>
           <th>Betalingsmåte</th>
@@ -132,7 +136,7 @@ title: Allershopping Orders
               Faktura
             {% elsif order.paymentmethod == 'DIBS' %}
               Kort
-            {% endif %}            
+            {% endif %}
           </td>
           <td>
             <div class="btn-group">
@@ -146,7 +150,7 @@ title: Allershopping Orders
                 <li><a href="order/{{ order.id }}/edit">Rediger</a></li>
                 {% if order.status == 'completed' %}
                 <li class="divider"></li>
-                <li><a style="color:#ff0000;" href="#">Kreditere</a></li>
+                <li><a data-toggle="modal" data-target="#myModal" style="color:#ff0000;" href="#">Kreditere</a></li>
                 {% endif %}
               </ul>
             </div>
@@ -156,19 +160,7 @@ title: Allershopping Orders
           <td colspan="11">
             <div class="well">
               <button type="button" class="close" onclick="$(this).closeEditForm();" aria-hidden="true">&times;</button>
-
-                <form class="form-inline" role="form">
-                  <div class="form-group">
-                    <label for="exampleInputEmail2">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleInputPassword2">Password</label>
-                    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
-                  </div>
-                  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-save"></span> Save</button>
-                </form>
-            
+              {% include inline-order.html param=order %}
             </div>
           </td>
         </tr>
@@ -189,3 +181,22 @@ title: Allershopping Orders
     </div>
   </div>
 </div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Kreditere?</h4>
+      </div>
+      <div class="modal-body">
+        Credit text goes here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Nei</button>
+        <button type="button" class="btn btn-primary">Ja</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->

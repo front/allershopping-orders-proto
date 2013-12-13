@@ -3,15 +3,21 @@
   username:       Marco Fernandes
   userid:         1
   useremail:      marco@front.no
-  total:          "99.50"
+  total:          "100,00 kr"
   status:         completed
+  ide:            2
   shop:           AllersShop
   paymentmethod:  DIBS
   items:
     - id: 1
-      sku: 1001
-    - id: 2
-      sku: 1002
+      sku:      1016a-716
+      title:    Pava lyslykt grå
+      price:    "100.00 kr"
+      quantity: 1
+      total:    "100.00 kr"
+      shop:     AllersShop
+      status:   completed
+      ide:      2
 
 - id:             567009
   date:           2013-12-12 14:31:07
