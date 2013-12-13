@@ -66,7 +66,7 @@ title: Allershopping Orders
         <label class="sr-only" for="searchMisc">ID, email, navn</label>
         <input class="form-control" id="searchMisc" placeholder="ID, email, navn">
       </div>
-      <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span>&nbsp;Search</button>
+      <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span>&nbsp;Søk</button>
     </form>
   </div>
   <div class="col-md-12">
@@ -142,8 +142,8 @@ title: Allershopping Orders
               <ul class="dropdown-menu" role="menu">
                 <li><a onclick="$(this).openEditForm();">Hurtigredigering</a></li>
                 <li class="divider"></li>
-                <li><a href="#">Se</a></li>
-                <li><a href="#">Rediger</a></li>
+                <li><a href="order/{{ order.id }}">Se</a></li>
+                <li><a href="order/{{ order.id }}/edit">Rediger</a></li>
                 {% if order.status == 'completed' %}
                 <li class="divider"></li>
                 <li><a style="color:#ff0000;" href="#">Kreditere</a></li>
