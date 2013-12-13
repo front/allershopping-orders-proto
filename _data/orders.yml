@@ -74,7 +74,7 @@
     - id: 2
       sku: 1002
 
-- id:             567006
+- id:             567005
   date:           2013-12-12 11:31:07
   username:       Marco Fernandes
   userid:         1
@@ -90,7 +90,7 @@
     - id: 2
       sku: 1002
 
-- id:             567006
+- id:             567004
   date:           2013-12-12 11:31:07
   username:       Marco Fernandes
   userid:         1
@@ -105,3 +105,34 @@
       sku: 1001
     - id: 2
       sku: 1002
+
+- id:             567003
+  date:           2013-12-12 11:31:07
+  username:       Marco Fernandes
+  userid:         1
+  useremail:      marco@front.no
+  total:          349.00
+  status:         manual
+  shop:           AllersShop
+  ide:            0
+  combined:       1
+  paymentmethod:  DIBS
+  items:
+    - id: 1
+      sku: 1001
+    - id: 2
+      sku: 1002-202
+
+- id:             567003
+  date:           2013-12-12 11:31:07
+  username:       Marco Fernandes
+  userid:         1
+  useremail:      marco@front.no
+  total:          349.50
+  status:         manual
+  shop:           Mineblader
+  combined:       1
+  paymentmethod:  DIBS
+  items:
+    - id: 1
+      sku: kk

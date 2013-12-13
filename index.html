@@ -30,8 +30,7 @@ title: Allershopping Orders
           <th>Kundeid</th>
           <th>Email Kunde</th>
           <th>Ordresum Totalt</th>
-          <th>Status</th>
-          <th>Status</th>
+          <th>Handlinger</th>
           <th>Status</th>
           <th>Shop</th>
           <th>Betalingsmåte</th>
@@ -41,7 +40,14 @@ title: Allershopping Orders
       <tbody>
       {% for order in site.data.orders %}
         <tr>
-          <td><a href="order/{{ order.id }}">{{ order.id }}</a></td>
+          <td>
+            <div style="white-space: nowrap;">
+              <a href="order/{{ order.id }}">{{ order.id }}</a>
+              {% if order.combined == 1 %}
+              <span title="Kombinert ordre" class="label label-info"><span class="glyphicon glyphicon-list"></span>&nbsp;</span>
+              {% endif %}
+            </div>
+          </td>
           <td>{{ order.date | date: "%d/%m/%Y %H:%M" }}</td>
           <td>{{ order.username }}</td>
           <td>{{ order.userid }}</td>
@@ -69,9 +75,6 @@ title: Allershopping Orders
             <span class="label label-success">OK</span>
             {% endif %}            
           </td>
-          <td>
-            
-          </td>
           <td>{{ order.shop }}</td>
           <td>{{ order.paymentmethod }}</td>
           <td>
@@ -93,7 +96,7 @@ title: Allershopping Orders
           </td>
         </tr>
         <tr class="edit-form hide">
-          <td colspan="12">
+          <td colspan="11">
             <div class="well">
               <button type="button" class="close" onclick="$(this).closeEditForm();" aria-hidden="true">&times;</button>
 
