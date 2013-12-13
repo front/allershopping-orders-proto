@@ -10,4 +10,9 @@
     $form = $(this).closest('tr');
     $form.addClass('hide');
   }
+
+  $(document).ready(function(){
+    $('#searchStartDate').datepicker();
+    $('#searchEndDate').datepicker();
+  });
 })(jQuery);

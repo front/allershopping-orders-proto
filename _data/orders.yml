@@ -3,7 +3,7 @@
   username:       Marco Fernandes
   userid:         1
   useremail:      marco@front.no
-  total:          99.50
+  total:          "99.50"
   status:         completed
   shop:           AllersShop
   paymentmethod:  DIBS
@@ -18,7 +18,7 @@
   username:       Fredrik Paus
   userid:         2
   useremail:      fredrik@front.no
-  total:          199.00
+  total:          "199.00"
   status:         manual
   shop:           Allerbok
   paymentmethod:  DIBS
@@ -33,7 +33,7 @@
   username:       Jan-Helge Hansen
   userid:         3
   useremail:      jhh@front.no
-  total:          259.00
+  total:          "259.00"
   status:         manual
   shop:           AllersShop
   paymentmethod:  Invoice
@@ -48,7 +48,7 @@
   username:       Jan-Helge Hansen
   userid:         3
   useremail:      jhh@front.no
-  total:          519.00
+  total:          "519.00"
   status:         completed
   shop:           AllersShop
   paymentmethod:  Invoice
@@ -63,7 +63,7 @@
   username:       Marco Fernandes
   userid:         1
   useremail:      marco@front.no
-  total:          214.50
+  total:          "214.50"
   status:         manual
   shop:           AllersShop
   ide:            0
@@ -79,7 +79,7 @@
   username:       Marco Fernandes
   userid:         1
   useremail:      marco@front.no
-  total:          214.50
+  total:          "214.50"
   status:         manual
   shop:           AllersShop
   ide:            1
@@ -95,7 +95,7 @@
   username:       Marco Fernandes
   userid:         1
   useremail:      marco@front.no
-  total:          214.50
+  total:          "214.50"
   status:         completed
   shop:           AllersShop
   ide:            2
@@ -111,7 +111,7 @@
   username:       Marco Fernandes
   userid:         1
   useremail:      marco@front.no
-  total:          349.00
+  total:          "349.00"
   status:         manual
   shop:           AllersShop
   ide:            0
@@ -128,7 +128,7 @@
   username:       Marco Fernandes
   userid:         1
   useremail:      marco@front.no
-  total:          349.00
+  total:          "349.00"
   status:         manual
   shop:           Mineblader
   combined:       1
@@ -136,3 +136,17 @@
   items:
     - id: 1
       sku: kk
+
+- id:             567003
+  date:           2013-12-12 11:31:07
+  username:       Marco Fernandes
+  userid:         1
+  useremail:      marco@front.no
+  total:          "349.00"
+  status:         manual
+  shop:           KK
+  combined:       1
+  paymentmethod:  DIBS
+  items:
+    - id: 1
+      sku: 1002-204
