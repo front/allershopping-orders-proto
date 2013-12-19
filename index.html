@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -34,7 +37,7 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Order List</a></li>
+              <li  class="active"><a href="/">Order List</a></li>
               <li><a href="#">Dashboard</a></li>
             </ul>
             <!--
@@ -185,10 +188,6 @@
                 <li class="divider"></li>
                 <li><a href="order/567010">Se</a></li>
                 <li><a href="order/567010/edit">Rediger</a></li>
-                
-                <li class="divider"></li>
-                <li><a data-toggle="modal" data-target="#myModal" style="color:#ff0000;" href="#">Kreditere</a></li>
-                
               </ul>
             </div>
           </td>
@@ -208,6 +207,7 @@
       <th>Totalt</th>
       <th>Shop</th>
       <th>&nbsp;</th>
+      <th>&nbsp;</th>
     </tr>
   </thead>
   <tbody>
@@ -222,7 +222,12 @@
       <td>
           
           <span class="label label-success">OK</span>
-                  
+          
+      </td>
+      <td style="text-align: right">
+        
+        <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modalCredit" href="#">Kreditere</a>
+        
       </td>
     </tr>
   
@@ -251,6 +256,25 @@
     </address>    
   </div>
 </div>
+
+<!-- Modal credit-->
+<div class="modal fade" id="modalCredit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Kreditere?</h4>
+      </div>
+      <div class="modal-body">
+        Credit text goes here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Nei</button>
+        <button type="button" class="btn btn-primary">Ja</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <!--
 <form class="form-inline" role="form">
@@ -307,7 +331,6 @@
                 <li class="divider"></li>
                 <li><a href="order/567009">Se</a></li>
                 <li><a href="order/567009/edit">Rediger</a></li>
-                
               </ul>
             </div>
           </td>
@@ -327,6 +350,7 @@
       <th>Totalt</th>
       <th>Shop</th>
       <th>&nbsp;</th>
+      <th>&nbsp;</th>
     </tr>
   </thead>
   <tbody>
@@ -339,7 +363,10 @@
       <td></td>
       <td></td>
       <td>
-                  
+          
+      </td>
+      <td style="text-align: right">
+        
       </td>
     </tr>
   
@@ -351,7 +378,10 @@
       <td></td>
       <td></td>
       <td>
-                  
+          
+      </td>
+      <td style="text-align: right">
+        
       </td>
     </tr>
   
@@ -380,6 +410,25 @@
     </address>    
   </div>
 </div>
+
+<!-- Modal credit-->
+<div class="modal fade" id="modalCredit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Kreditere?</h4>
+      </div>
+      <div class="modal-body">
+        Credit text goes here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Nei</button>
+        <button type="button" class="btn btn-primary">Ja</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <!--
 <form class="form-inline" role="form">
@@ -417,7 +466,7 @@
           </td>
           <td>
             
-            <button class="btn btn-sm btn-default">Lag faktura</button>
+            <button class="btn btn-sm btn-default" data-toggle="modal" data-target="#modalInvoice">Lag faktura</button>
                         
           </td>
           <td>AllersShop</td>
@@ -436,7 +485,6 @@
                 <li class="divider"></li>
                 <li><a href="order/567008">Se</a></li>
                 <li><a href="order/567008/edit">Rediger</a></li>
-                
               </ul>
             </div>
           </td>
@@ -456,6 +504,7 @@
       <th>Totalt</th>
       <th>Shop</th>
       <th>&nbsp;</th>
+      <th>&nbsp;</th>
     </tr>
   </thead>
   <tbody>
@@ -468,7 +517,10 @@
       <td></td>
       <td></td>
       <td>
-                  
+          
+      </td>
+      <td style="text-align: right">
+        
       </td>
     </tr>
   
@@ -480,7 +532,10 @@
       <td></td>
       <td></td>
       <td>
-                  
+          
+      </td>
+      <td style="text-align: right">
+        
       </td>
     </tr>
   
@@ -509,6 +564,25 @@
     </address>    
   </div>
 </div>
+
+<!-- Modal credit-->
+<div class="modal fade" id="modalCredit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Kreditere?</h4>
+      </div>
+      <div class="modal-body">
+        Credit text goes here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Nei</button>
+        <button type="button" class="btn btn-primary">Ja</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <!--
 <form class="form-inline" role="form">
@@ -565,10 +639,6 @@
                 <li class="divider"></li>
                 <li><a href="order/567007">Se</a></li>
                 <li><a href="order/567007/edit">Rediger</a></li>
-                
-                <li class="divider"></li>
-                <li><a data-toggle="modal" data-target="#myModal" style="color:#ff0000;" href="#">Kreditere</a></li>
-                
               </ul>
             </div>
           </td>
@@ -588,6 +658,7 @@
       <th>Totalt</th>
       <th>Shop</th>
       <th>&nbsp;</th>
+      <th>&nbsp;</th>
     </tr>
   </thead>
   <tbody>
@@ -600,7 +671,10 @@
       <td></td>
       <td></td>
       <td>
-                  
+          
+      </td>
+      <td style="text-align: right">
+        
       </td>
     </tr>
   
@@ -612,7 +686,10 @@
       <td></td>
       <td></td>
       <td>
-                  
+          
+      </td>
+      <td style="text-align: right">
+        
       </td>
     </tr>
   
@@ -641,6 +718,25 @@
     </address>    
   </div>
 </div>
+
+<!-- Modal credit-->
+<div class="modal fade" id="modalCredit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Kreditere?</h4>
+      </div>
+      <div class="modal-body">
+        Credit text goes here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Nei</button>
+        <button type="button" class="btn btn-primary">Ja</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <!--
 <form class="form-inline" role="form">
@@ -697,7 +793,6 @@
                 <li class="divider"></li>
                 <li><a href="order/567006">Se</a></li>
                 <li><a href="order/567006/edit">Rediger</a></li>
-                
               </ul>
             </div>
           </td>
@@ -717,6 +812,7 @@
       <th>Totalt</th>
       <th>Shop</th>
       <th>&nbsp;</th>
+      <th>&nbsp;</th>
     </tr>
   </thead>
   <tbody>
@@ -729,7 +825,10 @@
       <td></td>
       <td></td>
       <td>
-                  
+          
+      </td>
+      <td style="text-align: right">
+        
       </td>
     </tr>
   
@@ -741,7 +840,10 @@
       <td></td>
       <td></td>
       <td>
-                  
+          
+      </td>
+      <td style="text-align: right">
+        
       </td>
     </tr>
   
@@ -770,6 +872,25 @@
     </address>    
   </div>
 </div>
+
+<!-- Modal credit-->
+<div class="modal fade" id="modalCredit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Kreditere?</h4>
+      </div>
+      <div class="modal-body">
+        Credit text goes here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Nei</button>
+        <button type="button" class="btn btn-primary">Ja</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <!--
 <form class="form-inline" role="form">
@@ -826,7 +947,6 @@
                 <li class="divider"></li>
                 <li><a href="order/567005">Se</a></li>
                 <li><a href="order/567005/edit">Rediger</a></li>
-                
               </ul>
             </div>
           </td>
@@ -846,6 +966,7 @@
       <th>Totalt</th>
       <th>Shop</th>
       <th>&nbsp;</th>
+      <th>&nbsp;</th>
     </tr>
   </thead>
   <tbody>
@@ -858,7 +979,10 @@
       <td></td>
       <td></td>
       <td>
-                  
+          
+      </td>
+      <td style="text-align: right">
+        
       </td>
     </tr>
   
@@ -870,7 +994,10 @@
       <td></td>
       <td></td>
       <td>
-                  
+          
+      </td>
+      <td style="text-align: right">
+        
       </td>
     </tr>
   
@@ -899,6 +1026,25 @@
     </address>    
   </div>
 </div>
+
+<!-- Modal credit-->
+<div class="modal fade" id="modalCredit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Kreditere?</h4>
+      </div>
+      <div class="modal-body">
+        Credit text goes here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Nei</button>
+        <button type="button" class="btn btn-primary">Ja</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <!--
 <form class="form-inline" role="form">
@@ -955,10 +1101,6 @@
                 <li class="divider"></li>
                 <li><a href="order/567004">Se</a></li>
                 <li><a href="order/567004/edit">Rediger</a></li>
-                
-                <li class="divider"></li>
-                <li><a data-toggle="modal" data-target="#myModal" style="color:#ff0000;" href="#">Kreditere</a></li>
-                
               </ul>
             </div>
           </td>
@@ -978,6 +1120,7 @@
       <th>Totalt</th>
       <th>Shop</th>
       <th>&nbsp;</th>
+      <th>&nbsp;</th>
     </tr>
   </thead>
   <tbody>
@@ -990,7 +1133,10 @@
       <td></td>
       <td></td>
       <td>
-                  
+          
+      </td>
+      <td style="text-align: right">
+        
       </td>
     </tr>
   
@@ -1002,7 +1148,10 @@
       <td></td>
       <td></td>
       <td>
-                  
+          
+      </td>
+      <td style="text-align: right">
+        
       </td>
     </tr>
   
@@ -1032,6 +1181,25 @@
   </div>
 </div>
 
+<!-- Modal credit-->
+<div class="modal fade" id="modalCredit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Kreditere?</h4>
+      </div>
+      <div class="modal-body">
+        Credit text goes here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Nei</button>
+        <button type="button" class="btn btn-primary">Ja</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <!--
 <form class="form-inline" role="form">
   <div class="form-group">
@@ -1053,8 +1221,6 @@
           <td>
             <div style="white-space: nowrap;">
               <a href="order/567003">567003</a>
-              
-              <span title="Kombinert ordre" class="label label-info"><span class="glyphicon glyphicon-list"></span>&nbsp;</span>
               
             </div>
           </td>
@@ -1073,7 +1239,7 @@
             <span class="label label-warning">Avventer <span class="glyphicon glyphicon-arrow-right"></span></span>
                         
           </td>
-          <td>AllersShop</td>
+          <td>Combined</td>
           <td>
             
               Kort
@@ -1089,7 +1255,6 @@
                 <li class="divider"></li>
                 <li><a href="order/567003">Se</a></li>
                 <li><a href="order/567003/edit">Rediger</a></li>
-                
               </ul>
             </div>
           </td>
@@ -1108,6 +1273,7 @@
       <th>Antall</th>
       <th>Totalt</th>
       <th>Shop</th>
+      <th>&nbsp;</th>
       <th>&nbsp;</th>
     </tr>
   </thead>
@@ -1123,7 +1289,10 @@
       <td>
           
           <span class="label label-warning">Avventer <span class="glyphicon glyphicon-arrow-right"></span></span>
-                  
+          
+      </td>
+      <td style="text-align: right">
+        
       </td>
     </tr>
   
@@ -1137,116 +1306,12 @@
       <td>
           
           <span class="label label-warning">Avventer <span class="glyphicon glyphicon-arrow-right"></span></span>
-                  
+          
+      </td>
+      <td style="text-align: right">
+        
       </td>
     </tr>
-  
-  </tbody>
-</table>
-
-<div class="row">
-  <div class="col-md-3">
-    <div>Postadresse:</div>
-    <address>
-      <strong>Bente  Rom Øysæd</strong><br>
-      Botnåsveien 21<br>
-      4480  Kvinesdal<br>
-      Norge<br>
-      <abbr title="Mobiltelefon">M:</abbr> +47 91174881
-    </address>    
-  </div>
-  <div class="col-md-3">
-    <div>Betalingsinformasjon:</div>
-    <address>
-      <strong>Mona  Nilsen</strong><br>
-      Hamreveien 40<br>
-      4480  Kvinesdal<br>
-      Norge<br>
-      <abbr title="Mobiltelefon">M:</abbr> +47 91174881
-    </address>    
-  </div>
-</div>
-
-<!--
-<form class="form-inline" role="form">
-  <div class="form-group">
-    <label for="exampleInputEmail2">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword2">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
-  </div>
-  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-save"></span> Save</button>
-</form>
--->
-            </div>
-          </td>
-        </tr>
-      
-        <tr>
-          <td>
-            <div style="white-space: nowrap;">
-              <a href="order/567003">567003</a>
-              
-              <span title="Kombinert ordre" class="label label-info"><span class="glyphicon glyphicon-list"></span>&nbsp;</span>
-              
-            </div>
-          </td>
-          <td>12/12/2013 11:31</td>
-          <td>Marco Fernandes</td>
-          <td>1</td>
-          <td>marco@front.no</td>
-          <td>1708.00</td>
-          <td>
-            
-            <span class="label label-danger">IKKE FERDIG</span>
-            
-          </td>
-          <td>
-            
-            <span class="label label-warning">Avventer</span>
-                        
-          </td>
-          <td>Mineblader</td>
-          <td>
-            
-              Kort
-            
-          </td>
-          <td>
-            <div class="btn-group">
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                Rediger <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a onclick="$(this).openEditForm();">Hurtigredigering</a></li>
-                <li class="divider"></li>
-                <li><a href="order/567003">Se</a></li>
-                <li><a href="order/567003/edit">Rediger</a></li>
-                
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr class="edit-form hide">
-          <td colspan="11">
-            <div class="well">
-              <button type="button" class="close" onclick="$(this).closeEditForm();" aria-hidden="true">&times;</button>
-              <h2></h2>
-<table class="table">
-  <thead>
-    <tr>
-      <th>SKU</th>
-      <th>Tittel</th>
-      <th>Enhetspris</th>
-      <th>Antall</th>
-      <th>Totalt</th>
-      <th>Shop</th>
-      <th>&nbsp;</th>
-    </tr>
-  </thead>
-  <tbody>
   
     <tr>
       <td>kk</td>
@@ -1258,116 +1323,12 @@
       <td>
           
           <span class="label label-warning">Avventer</span>
-                  
+          
+      </td>
+      <td style="text-align: right">
+        
       </td>
     </tr>
-  
-  </tbody>
-</table>
-
-<div class="row">
-  <div class="col-md-3">
-    <div>Postadresse:</div>
-    <address>
-      <strong>Bente  Rom Øysæd</strong><br>
-      Botnåsveien 21<br>
-      4480  Kvinesdal<br>
-      Norge<br>
-      <abbr title="Mobiltelefon">M:</abbr> +47 91174881
-    </address>    
-  </div>
-  <div class="col-md-3">
-    <div>Betalingsinformasjon:</div>
-    <address>
-      <strong>Mona  Nilsen</strong><br>
-      Hamreveien 40<br>
-      4480  Kvinesdal<br>
-      Norge<br>
-      <abbr title="Mobiltelefon">M:</abbr> +47 91174881
-    </address>    
-  </div>
-</div>
-
-<!--
-<form class="form-inline" role="form">
-  <div class="form-group">
-    <label for="exampleInputEmail2">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter email">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword2">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword2" placeholder="Password">
-  </div>
-  <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-save"></span> Save</button>
-</form>
--->
-            </div>
-          </td>
-        </tr>
-      
-        <tr>
-          <td>
-            <div style="white-space: nowrap;">
-              <a href="order/567003">567003</a>
-              
-              <span title="Kombinert ordre" class="label label-info"><span class="glyphicon glyphicon-list"></span>&nbsp;</span>
-              
-            </div>
-          </td>
-          <td>12/12/2013 11:31</td>
-          <td>Marco Fernandes</td>
-          <td>1</td>
-          <td>marco@front.no</td>
-          <td>1708.00</td>
-          <td>
-            
-            <span class="label label-danger">IKKE FERDIG</span>
-            
-          </td>
-          <td>
-            
-            <button class="btn btn-sm btn-default">Bekreft</button>
-                        
-          </td>
-          <td>KK</td>
-          <td>
-            
-              Kort
-            
-          </td>
-          <td>
-            <div class="btn-group">
-              <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                Rediger <span class="caret"></span>
-              </button>
-              <ul class="dropdown-menu" role="menu">
-                <li><a onclick="$(this).openEditForm();">Hurtigredigering</a></li>
-                <li class="divider"></li>
-                <li><a href="order/567003">Se</a></li>
-                <li><a href="order/567003/edit">Rediger</a></li>
-                
-              </ul>
-            </div>
-          </td>
-        </tr>
-        <tr class="edit-form hide">
-          <td colspan="11">
-            <div class="well">
-              <button type="button" class="close" onclick="$(this).closeEditForm();" aria-hidden="true">&times;</button>
-              <h2></h2>
-<table class="table">
-  <thead>
-    <tr>
-      <th>SKU</th>
-      <th>Tittel</th>
-      <th>Enhetspris</th>
-      <th>Antall</th>
-      <th>Totalt</th>
-      <th>Shop</th>
-      <th>&nbsp;</th>
-    </tr>
-  </thead>
-  <tbody>
   
     <tr>
       <td>102-2100-0033</td>
@@ -1378,8 +1339,11 @@
       <td>KKShop</td>
       <td>
           
-          <button class="btn btn-sm btn-default">Bekreft</button>
-                  
+          <button class="btn btn-sm btn-success">Bekreft</button>
+          
+      </td>
+      <td style="text-align: right">
+        
       </td>
     </tr>
   
@@ -1408,6 +1372,25 @@
     </address>    
   </div>
 </div>
+
+<!-- Modal credit-->
+<div class="modal fade" id="modalCredit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Kreditere?</h4>
+      </div>
+      <div class="modal-body">
+        Credit text goes here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Nei</button>
+        <button type="button" class="btn btn-primary">Ja</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <!--
 <form class="form-inline" role="form">
@@ -1443,16 +1426,16 @@
   </div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<!-- Modal Invoice -->
+<div class="modal fade" id="modalInvoice" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Kreditere?</h4>
+        <h4 class="modal-title" id="myModalLabel">Lag faktura?</h4>
       </div>
       <div class="modal-body">
-        Credit text goes here.
+        Invoice text goes here.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Nei</button>
@@ -1461,7 +1444,7 @@
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
-
+        <div>path: /index.html</div>
       </div>
 
     </body>
