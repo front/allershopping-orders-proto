@@ -31,6 +31,12 @@
   items:
     - id: 1
       sku: 1001
+      title:    "Allerbok bok"
+      price:    "99.00 kr"
+      quantity: 1
+      total:    "99.00 kr"
+      shop:     Allerbok
+      status:   manual
     - id: 2
       sku: 1002
 

@@ -125,7 +125,7 @@ title: Allershopping Orders
             {% elsif order.paymentmethod == 'DIBS' and order.status == "manual" and order.shop == "Mineblader" %}
             <span class="label label-warning">Avventer</span>
             {% elsif order.paymentmethod == 'DIBS' and order.status == "manual" %}
-            <button class="btn btn-sm btn-default">Bekreft</button>
+            <span class="label label-warning">Bekreft</span>
             {% elsif order.status == "completed" %}
             <span class="label label-success">OK</span>
             {% endif %}            
