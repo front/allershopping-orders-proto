@@ -119,9 +119,9 @@
   useremail:      marco@front.no
   total:          "1708.00"
   status:         manual
-  shop:           AllersShop
+  shop:           Combined
   ide:            0
-  combined:       1
+  combined:       0
   paymentmethod:  DIBS
   items:
     - id: 1
@@ -142,18 +142,6 @@
       shop:     AllersShop
       status:   manual
       ide:      0
-
-- id:             567003
-  date:           2013-12-12 11:31:07
-  username:       Marco Fernandes
-  userid:         1
-  useremail:      marco@front.no
-  total:          "1708.00"
-  status:         manual
-  shop:           Mineblader
-  combined:       1
-  paymentmethod:  DIBS
-  items:
     - id: 3
       sku:      kk
       title:    11 utgaver + Nora Norway skinnarmbånd (Blå)
@@ -162,18 +150,6 @@
       total:    "298.00 kr"
       shop:     Mineblader
       status:   manual
-
-- id:             567003
-  date:           2013-12-12 11:31:07
-  username:       Marco Fernandes
-  userid:         1
-  useremail:      marco@front.no
-  total:          "1708.00"
-  status:         manual
-  shop:           KK
-  combined:       1
-  paymentmethod:  DIBS
-  items:
     - id: 4
       sku:      102-2100-0033
       title:    "Myk og deilig Poncho - Motestrikk by KK & Dale Garn"
@@ -182,3 +158,4 @@
       total:    "900.00 kr"
       shop:     KKShop
       status:   manual
+

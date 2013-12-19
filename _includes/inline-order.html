@@ -9,6 +9,7 @@
       <th>Totalt</th>
       <th>Shop</th>
       <th>&nbsp;</th>
+      <th>&nbsp;</th>
     </tr>
   </thead>
   <tbody>
@@ -32,10 +33,15 @@
           {% elsif include.param.paymentmethod == 'DIBS' and item.status == "manual" and item.shop == "Mineblader" %}
           <span class="label label-warning">Avventer</span>
           {% elsif include.param.paymentmethod == 'DIBS' and item.status == "manual" %}
-          <button class="btn btn-sm btn-default">Bekreft</button>
+          <button class="btn btn-sm btn-success">Bekreft</button>
           {% elsif item.status == "completed" %}
           <span class="label label-success">OK</span>
-          {% endif %}        
+          {% endif %}
+      </td>
+      <td style="text-align: right">
+        {% if item.status == "completed" and include.param.paymentmethod == 'DIBS' %}
+        <a class="btn btn-warning btn-sm" data-toggle="modal" data-target="#modalCredit" href="#">Kreditere</a>
+        {% endif %}
       </td>
     </tr>
   {% endfor %}
@@ -64,6 +70,25 @@
     </address>    
   </div>
 </div>
+
+<!-- Modal credit-->
+<div class="modal fade" id="modalCredit" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Kreditere?</h4>
+      </div>
+      <div class="modal-body">
+        Credit text goes here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Nei</button>
+        <button type="button" class="btn btn-primary">Ja</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <!--
 <form class="form-inline" role="form">
