@@ -2,6 +2,4 @@ name:     Allershopping Orders Backend
 markdown: redcarpet
 pygments: true
 
-relative_permalinks: true
-
-permalink:     order/:id
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']
