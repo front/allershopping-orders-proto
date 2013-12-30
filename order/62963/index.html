@@ -1,0 +1,219 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="viewport" content="width=device-width">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../../assets/themes/bootstrap/resources/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../assets/themes/bootstrap/resources/datepicker/css/datepicker.css">
+        <link rel="stylesheet" href="../../assets/themes/bootstrap/css/style.css">
+        <!-- JS -->
+        <script type="text/javascript" src="../../assets/themes/bootstrap/resources/jquery/jquery.min.js"></script>
+        <script type="text/javascript" src="../../assets/themes/bootstrap/resources/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="../../assets/themes/bootstrap/resources/datepicker/js/bootstrap-datepicker.js"></script>
+
+        <script type="text/javascript" src="../../assets/themes/bootstrap/js/scripts.js"></script>
+    </head>
+    <body>
+      <header>
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Allershopping</a>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li ><a href="../..//">Order List</a></li>
+              <li><a href="#">Dashboard</a></li>
+            </ul>
+            <!--
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Link</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Action</a></li>
+                  <li><a href="#">Another action</a></li>
+                  <li><a href="#">Something else here</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Separated link</a></li>
+                </ul>
+              </li>
+            </ul>
+            -->
+          </div><!-- /.navbar-collapse -->
+        </nav>        
+      </header>
+
+      <div id="main" class="container">
+        <div class="page-header">
+  <h1><a href="/"><small><span class="glyphicon glyphicon-chevron-left"></span></small></a>&nbsp;</span>Ordre 62963</small></h1>
+</div>
+
+
+
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#">Vis</a></li>
+  <li><a href="#">Rediger</a></li>
+  <li><a href="#">PDF eksport</a></li>
+  <li><a href="#">Betaling</a></li>
+  <li><a href="#">Historik</a></li>
+  <li><a href="#">MediaConnect</a></li>
+</ul>
+
+<div class="order">
+<h2></h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Tittel</th>
+      <th>Enhetspris</th>
+      <th>Antall</th>
+      <th>Totalt</th>
+      <th>Shop</th>
+      <th>Status</th>
+      <th>Handlinger</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    <tr>
+      <td>Morgan Kane - El Gringos hevn (tegneseriehefte) 2012 (7023060112721xx)</td>
+      <td style="text-align: left">59,50 kr</td>
+      <td>1</td>
+      <td style="text-align: left">59,50 kr</td>
+      <td>Allerbok</td>
+      <td>
+        
+        <span class="label label-danger">IKKE FERDIG</span>
+        
+      </td>
+      <td style="text-align: left">
+          
+          <button class="btn btn-sm btn-success" data-toggle="modal" data-target="#modalConfirm">Bekreft</button>
+          
+      </td>
+    </tr>
+  
+  </tbody>
+</table>
+
+<div class="row">
+  <div class="col-md-3">
+    <div>Postadresse:</div>
+    <address>
+      <strong>Ragnar Wisløff</strong><br>
+      Prestteigen 3<br>
+      7290  Støren<br>
+      Norge<br>
+      <abbr title="Mobiltelefon">M:</abbr> 72431727
+    </address>
+  </div>
+  <div class="col-md-3">
+    <div>Betalingsinformasjon:</div>
+    <address>
+      <strong>Ragnar Wisløff</strong><br>
+      Prestteigen 3<br>
+      7290  Støren<br>
+      Norge<br>
+      <abbr title="Mobiltelefon">M:</abbr> 72431727
+    </address>    
+  </div>
+  <div class="col-md-3">
+    &nbsp;
+  </div>
+  <div class="col-md-3">
+    <table class="table">
+      <tbody>
+        <tr>
+          <td>Subtotal</td>
+          <td style="text-align: right">59,50 kr</td>
+        </tr>
+        <tr>
+          <td>Herav MVA</td>
+          <td style="text-align: right">0,00 kr</td>
+        </tr>
+        <tr>
+          <td>Totalbeløp</td>
+          <td style="text-align: right">59,50 kr</td>
+        </tr>
+      </tbody>
+    </table> 
+  </div>
+</div>
+
+</div>
+
+      </div>
+      <!-- Modal Invoice -->
+<div class="modal fade" id="modalInvoice" tabindex="-1" role="dialog" aria-labelledby="modalInvoiceLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="modalInvoiceLabel">Lag faktura?</h4>
+      </div>
+      <div class="modal-body">
+        Invoice text goes here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Nei</button>
+        <button type="button" class="btn btn-primary">Ja</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- Modal credit-->
+<div class="modal fade" id="modalCredit" tabindex="-1" role="dialog" aria-labelledby="modalCreditLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="modalCreditLabel">Kreditere?</h4>
+      </div>
+      <div class="modal-body">
+        Credit text goes here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Nei</button>
+        <button type="button" class="btn btn-primary">Ja</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<!-- Modal confirm-->
+<div class="modal fade" id="modalConfirm" tabindex="-1" role="dialog" aria-labelledby="modalConfirmLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="modalConfirmLabel">Bekreft?</h4>
+      </div>
+      <div class="modal-body">
+        Confirm text goes here.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Nei</button>
+        <button type="button" class="btn btn-primary">Ja</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+    </body>
+</html>
