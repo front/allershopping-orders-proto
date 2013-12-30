@@ -1,0 +1,5 @@
+name:     Allershopping Orders Backend
+markdown: redcarpet
+pygments: true
+
+exclude: ['Gemfile', 'Gemfile.lock', 'Rakefile', 'README.md']

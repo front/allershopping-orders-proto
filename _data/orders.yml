@@ -1,0 +1,237 @@
+- id:             62978
+  date:           2013-12-20 12:06:07
+  subtotal:       "312,80 kr"
+  mva:            "78,20 kr"
+  total:          "391,00 kr"
+  status:         manual
+  shop:           Mineblader
+  email:          christian.anholt@gmail.com
+  paymentmethod:  DIBS
+  mcorderid:      923811
+  user:
+    id:           37438
+    name:         Christian Anholt
+    email:        christian.anholt@gmail.com
+  deliveryinfo:
+    name:     Inger Helene Anholt
+    address:  Åbolveien 47
+    postal:   3225 Sandefjord
+    country:  Norge
+    phone:    
+  paymentinfo:
+    name:     Christian Anholt
+    address:  Storevarveien 80
+    postal:   3159  Melsomvik
+    country:  Norge
+    phone:    "98841617"
+  items:
+    - id:         1
+      label:      "Se og Hør (soht14)"
+      price:      "391,00 kr"
+      quantity:   1
+      total:      "391,00 kr"
+      shop:       Mineblader
+      processed:  0
+      idestatus:
+- id:             62963
+  date:           2013-12-20 10:33:07
+  subtotal:       "59,50 kr"
+  mva:            "0,00 kr"
+  total:          "59,50 kr"
+  status:         manual
+  shop:           Allerbok
+  email:          ragwis@online.no
+  paymentmethod:  DIBS
+  mcorderid:      923811
+  user:
+    id:           37429
+    name:         Ragnar Wisløff
+    email:        ragwis@online.no
+  deliveryinfo:
+    name:     Ragnar Wisløff
+    address:  Prestteigen 3
+    postal:   7290  Støren
+    country:  Norge
+    phone:    "72431727"
+  paymentinfo:
+    name:     Ragnar Wisløff
+    address:  Prestteigen 3
+    postal:   7290  Støren
+    country:  Norge
+    phone:    "72431727"
+  items:
+    - id:         1
+      label:      "Morgan Kane - El Gringos hevn (tegneseriehefte) 2012 (7023060112721xx)"
+      price:      "59,50 kr"
+      quantity:   1
+      total:      "59,50 kr"
+      shop:       Allerbok
+      processed:  0
+      status:     0
+      idestatus:
+- id:             629630
+  date:           2013-12-12 11:31:07
+  username:       Marco Fernandes
+  userid:         1
+  useremail:      marco@front.no
+  total:          "1708.00"
+  status:         manual
+  shop:           Combined
+  ide:            0
+  combined:       0
+  paymentmethod:  DIBS
+  user:
+    id:           37429
+    name:         Ragnar Wisløff
+    email:        ragwis@online.no
+  deliveryinfo:
+    name:     Bente Rom Øysæd
+    address:  Botnåsveien 21
+    postal:   4480 Kvinesdal
+    country:  Norge
+    phone:    "91174881"
+  paymentinfo:
+    name:     Mona Nilsen
+    address:  Hamreveien 40
+    postal:   4480 Kvinesdal
+    country:  Norge
+    phone:    "91174881"
+  items:
+    - id: 1
+      label:      Pava lyslykt grå (1016a-716)
+      price:      "100.00 kr"
+      quantity:   1
+      total:      "100.00 kr"
+      shop:       AllersShop
+      processed:  0
+      idestatus:  0
+    - id: 2
+      label:      Moisturizing Color Mask 250ml (2043-6008)
+      price:      "205.00 kr"
+      quantity:   2
+      total:      "410.00 kr"
+      shop:       AllersShop
+      status:     manual
+      idestatus:  1
+    - id: 3
+      label:      11 utgaver + Nora Norway skinnarmbånd (Blå) (kk)
+      price:      "298.00 kr"
+      quantity:   1
+      total:      "298.00 kr"
+      shop:       Mineblader
+      processed:  0
+    - id: 4
+      label:      "Myk og deilig Poncho - Motestrikk by KK & Dale Garn (102-2100-0033)"
+      price:      "900.00 kr"
+      quantity:   1
+      total:      "900.00 kr"
+      shop:       KKShop
+      processed:  0
+- id:             61674
+  date:           2013-12-16 21:21:07
+  subtotal:       "645,00 kr"
+  mva:            "0,00 kr"
+  total:          "645,00 kr"
+  status:         completed
+  shop:           Allerbok
+  email:          arnfredm@online.no
+  paymentmethod:  DIBS
+  mcorderid:      
+  user:
+    id:           13481
+    name:         Arnfred  Mikalsen
+    email:        arnfredm@online.no
+  deliveryinfo:
+    name:     Arnfred  Mikalsen
+    address:  Myrhaugvn. 21 b
+    postal:   1900  Fetsund
+    country:  Norge
+    phone:    "91585770"
+  paymentinfo:
+    name:     Arnfred  Mikalsen
+    address:  Myrhaugvn. 21 b
+    postal:   1900  Fetsund
+    country:  Norge
+    phone:    "91585770"
+  items:
+    - id:         1
+      label:      "Tempelprestinnens gjenganger - Morgan Kane, bok 54 (9788282689700)"
+      price:      "129,00 kr"
+      quantity:   1
+      total:      "129,00 kr"
+      shop:       Allerbok
+      processed:  1
+    - id:         2
+      label:      "Dødsklokkene - Morgan Kane, bok 48 (9788282686730)"
+      price:      "129,00 kr"
+      quantity:   1
+      total:      "129,00 kr"
+      shop:       Allerbok
+      processed:  1
+    - id:         3
+      label:      "Lovens skygge - Morgan Kane, bok 49 (9788282686747)"
+      price:      "129,00 kr"
+      quantity:   1
+      total:      "129,00 kr"
+      shop:       Allerbok
+      processed:  1
+    - id:         4
+      label:      "Demonene fra Nicaragua - Morgan Kane, bok 50 (9788282686754)"
+      price:      "129,00 kr"
+      quantity:   1
+      total:      "129,00 kr"
+      shop:       Allerbok
+      processed:  1
+    - id:         5
+      label:      "Gribbene i Sierra Madre - Morgan Kane, bok 52 (9788282686778)"
+      price:      "129,00 kr"
+      quantity:   1
+      total:      "129,00 kr"
+      shop:       Allerbok
+      processed:  1
+- id:             62773
+  date:           2013-12-20 10:33:07
+  subtotal:       "382,40 kr"
+  invoicefee:     "23,20 kr"
+  freight:        "79,20 kr"
+  mva:            "121,20 kr"
+  discount:       "-47,80 kr"
+  total:          "558,20 kr"
+  status:         manual
+  shop:           AllerShop
+  email:          nina-ronning@hotmail.com
+  paymentmethod:  Invoice
+  mcorderid:      
+  user:
+    id:           37337
+    name:         Randi Kartum
+    email:        nina-ronning@hotmail.com
+  deliveryinfo:
+    name:     Randi Kartum
+    address:  Kartum
+    postal:   7520 Hegra
+    country:  Norge
+    phone:    "98696306"
+  paymentinfo:
+    name:     Randi Kartum
+    address:  Kartum
+    postal:   7520 Hegra
+    country:  Norge
+    phone:    "98696306"
+  items:
+    - id:         1
+      label:      "Gløggkanne med varmer (1337-716)"
+      price:      "314,10 kr"
+      quantity:   1
+      total:      "314,10 kr"
+      shop:       AllerShop
+      processed:  1
+      idestatus:  2
+    - id:         2
+      label:      "Pop cake form rød (1121-716)"
+      price:      "116,10 kr"
+      quantity:   1
+      total:      "116,10 kr"
+      shop:       AllerShop
+      processed:  1
+      idestatus:  2
