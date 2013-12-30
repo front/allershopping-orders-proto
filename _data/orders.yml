@@ -8,6 +8,7 @@
   email:          christian.anholt@gmail.com
   paymentmethod:  DIBS
   mcorderid:      923811
+  mcorderstatus:  Error
   user:
     id:           37438
     name:         Christian Anholt
@@ -42,7 +43,6 @@
   shop:           Allerbok
   email:          ragwis@online.no
   paymentmethod:  DIBS
-  mcorderid:      923811
   user:
     id:           37429
     name:         Ragnar Wisløff
@@ -80,6 +80,8 @@
   ide:            0
   combined:       0
   paymentmethod:  DIBS
+  mcorderid:      923810
+  mcorderstatus:  OK
   user:
     id:           37429
     name:         Ragnar Wisløff
@@ -112,6 +114,7 @@
       total:      "410.00 kr"
       shop:       AllersShop
       status:     manual
+      processed:  1
       idestatus:  1
     - id: 3
       label:      11 utgaver + Nora Norway skinnarmbånd (Blå) (kk)
@@ -119,7 +122,7 @@
       quantity:   1
       total:      "298.00 kr"
       shop:       Mineblader
-      processed:  0
+      processed:  1
     - id: 4
       label:      "Myk og deilig Poncho - Motestrikk by KK & Dale Garn (102-2100-0033)"
       price:      "900.00 kr"

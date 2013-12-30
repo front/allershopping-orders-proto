@@ -38,6 +38,9 @@ title: Allershopping Orders
               {% if order.combined == 1 %}
               <span title="Kombinert ordre" class="label label-info"><span class="glyphicon glyphicon-list"></span>&nbsp;</span>
               {% endif %}
+              {% if order.mcorderid %}
+              <div class="small"><a href="order/{{ order.id }}#mediaconnect"><span class="label label-primary">MC {{ order.mcorderid }}</span></a></div>
+              {% endif %}
             </div>
           </td>
           <td>{{ order.date | date: "%d/%m/%Y %H:%M" }}</td>
@@ -66,6 +69,10 @@ title: Allershopping Orders
             <span class="label label-warning">Bekreft</span>
             {% elsif order.status == "completed" %}
             <span class="label label-success">OK</span>
+            {% endif %}
+
+            {% if order.mcorderid %}
+            <a href="order/{{ order.id }}#mediaconnect"><span class="label {% if order.mcorderstatus == 'OK' %}label-success{% else %}label-danger{% endif%}">MC {{ order.mcorderstatus }}</span></a>
             {% endif %}
           </td>
           <td>{{ order.shop }}</td>

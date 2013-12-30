@@ -5,6 +5,13 @@ layout: default
   <h1><a href="/"><small><span class="glyphicon glyphicon-chevron-left"></span></small></a>&nbsp;</span>Ordre {{ page.order.id }}</small></h1>
 </div>
 
+{% if page.order.status == 'manual' and page.order.paymentmethod == 'Invoice' %}
+<div class="well">
+  <button class="btn btn-primary">Create Invoice</button>
+  <span>You will be redirected to DIBS payment window. After completing the invoice, you will redirect back here.</span>
+</div>
+{% endif %}
+
 <ul class="nav nav-tabs">
   <li class="active"><a href="#">Vis</a></li>
   <li><a href="#">Rediger</a></li>
